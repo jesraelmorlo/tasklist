@@ -172,7 +172,7 @@
 	    $breadcrumb = $this->breadcrumb;
 	    $modulos = $this->modulos;
 	    $classe = $this->classe;
-	    require './src/View/task/task_form.php';
+	    require './src/View/Task/task_form.php';
 	}
 
 	public function remover()
