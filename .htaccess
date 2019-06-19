@@ -1,0 +1,6 @@
+Options -Indexes
+ErrorDocument 404 http://localhost/tasklist/404page.html
+RewriteEngine On
+RewriteRule ^login/?$ index.php?class=Usuario&acao=login [NC,L]
+RewriteRule ^fornecedor/?$ index.php?class=Fornecedor&acao=listar [NC,L]
+RewriteRule ^([a-z]+)?\/([a-z]+)?\/([0-9A-Za-z]+)?\/?(.*)$ index.php?class=$1&acao=$2&handle=$3&parametros=$4 [NC,L]
